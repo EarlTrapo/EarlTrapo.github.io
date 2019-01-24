@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Developer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <header class="container-wide">
+        <nav>
+            <a href="./" class="brand">Elvis Ohbee</a>
+            <span class="align-right">
+                <a href="./">Blog</a>
+                <a href="#contact-form">Contacts</a>
+            </span>
+        </nav>
+    </header>
+    <main>
+        <div class="cover-and-quote">
+            <div class="quote-card card">
+                <p class="quote">Where the willingness is great, the difficulties cannot be great.</p>
+                <p class="attribution">Nicolo Machiavelli</p>
+            </div>
+        </div>
+        <div class="introduction">
+            <div class="card intro-card">
+                <div class="bio">
+                    <img src="images/PSX_20190106_075400.jpg" class="profile" alt="Elvis Ohbee">
+                    <div class="name-card">
+                        <h1>Elvis Obi.</h1>
+                        <p>Front end web developer, aspiring full stack web developer</p>
+                    </div>
+                </div>
+                <div class="intro-text">
+                    <p>I'm a front end web developer. I design amazing websites that are easy to navigate and provide amazing user experience for your customers.</p>
+                </div>
+                <button type="button">Hire Me!</button>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-card card">
+                <h2>Projects</h2>
+                <div class="single-project-card card" id="project-card1">
+                    <div class="project-description">
+                        <h3>To read list</h3>
+                                <p>List of books for reading, comes with features that help you delete and add books as you please.</p>
+                    </div>
+                </div>
+                <div class="single-project-card card" id="project-card2">
+                    <div class="project-description">
+                        <h3>Manes Winchester Lawfirm</h3>
+                        <p>A website for a family lawfirm, great design and provides amazing user experience.</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="contact-form" class="contact-form">
+            <div class="contact-form-card card">
+                <h2>Contact me</h2>
+                <p>Will be glad to hear from you.</p>
+                <form action="./">
+                    <div class="input-group half">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="input-group half last">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="input-group text-area clear">
+                        <label for="message" hidden>Message</label>
+                        <textarea name="message" id="message" placeholder="I would like..."></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <p class="stand-alone">You can also reach me through my email, elvisohbee@gmail.com. See other stuff I work on my <a href="EarlTrapo.github.io">github</a></p>
+        </div>
+    </main>
+</body>
+</html>
