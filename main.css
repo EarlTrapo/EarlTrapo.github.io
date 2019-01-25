@@ -12,6 +12,7 @@ header a {
     margin-right: 20px;
     margin-left: 20px;
     color: #fdfdfd;
+    text-decoration: none;
 }
 .align-right {
     float: right;
@@ -79,11 +80,10 @@ button {
 .project-card {
     transform: skewY(5deg);
     margin-bottom: 40px;
-    height: 600px;
+    height: fit-content;
 }
 .single-project-card {
-    width: 48%;
-    float: left;
+    width: 365px;
     margin-right: 10px;
     min-height: 460px;
     box-shadow: none;
@@ -101,10 +101,12 @@ button {
 #project-card1{
     background: url(images/IMG_20190123_015936_5.jpg) no-repeat;
     background-size: cover;
+    order: 1;
 }
 #project-card2{
     background: url(images/IMG_20181205_161925_9.jpg) no-repeat;
     background-size: cover;
+    order: 2;
 }
 .contact-form {
     background: #f5b4fe;
@@ -119,13 +121,14 @@ button {
     margin-bottom: 40px;
     margin: auto;
 }
+.input-group-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 .input-group {
     margin-bottom: 20px;
     margin-top: 20px;
-}
-.input-group.half {
-    width: 49%;
-    float: left;
 }
 .input-group.clear {
     padding-top: 20px;
@@ -152,4 +155,27 @@ textarea {
     margin: auto;
     padding: 40px;
     transform: skewY(-5deg);
+}
+.project-card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 829px){
+    .card {
+        width: 90%;
+    }
+    .single-project-card {
+        margin: auto;
+        box-shadow: 0 5px 5px #909090;
+    }
+}
+@media (max-width: 800px){
+    #project-card2 {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 350px){
+    .intro-card.card, .contact-form-card.card, .project-card.card {
+        margin: auto;
+    }
 }
